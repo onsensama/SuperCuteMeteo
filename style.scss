@@ -24,6 +24,7 @@ body {
 
 .screen {
   padding: 3vh;
+  background-color: #e8edf3;
   border: solid 1px rgba(63, 91, 102, 0.5);
   grid-area: 1 / 1;
   display: grid;
@@ -31,9 +32,9 @@ body {
   grid-template-columns: 1fr 390px 1fr;
 
   .title-website {
-    font-size: 0.9rem;
+    font-size: 1em;
     font-weight: 400;
-    color: #1e4853;
+    color: #3f5b66;
     opacity: 40%;
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -47,17 +48,128 @@ body {
   .reserved {
     grid-area: 4 / 2;
     text-align: center;
-    color: #1e4853;
+    color: #3f5b66;
     font-size: 0.7rem;
     opacity: 25%;
   }
+}
 
-  .container-app {
-    grid-area: 3 / 2;
-    border-radius: 80px;
-    border: 8px solid #4279db;
-    box-sizing: border-box;
-    box-shadow: inset -15px -15px 25px rgba(255, 255, 255, 0.5),
-      inset 20px 20px 25px rgba(209, 217, 230, 0.5);
+.container-app {
+  background: linear-gradient(
+    135deg,
+    rgba(72, 226, 255, 1) 0%,
+    rgba(0, 108, 255, 1) 100%
+  );
+  grid-area: 3 / 2;
+  border-radius: 70px;
+  border: 8px solid #547bb9;
+  box-sizing: border-box;
+}
+
+.content-app {
+  height: 100%;
+  display: grid;
+  grid-template:
+    50px
+    auto
+    auto
+    auto
+    1fr
+    / 40px 1fr 40px;
+  grid-row-gap: 50px;
+
+  .title-app {
+    text-align: center;
+    grid-area: 2 / 2;
+    color: white;
+
+    h1 {
+      font-family: Pamela;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      text-transform: lowercase;
+      font-weight: 400;
+      font-size: 0.85rem;
+      margin: 5px 0 0 0;
+      text-align: right;
+      display: block;
+      padding-right: 5px;
+    }
+  }
+
+  .info-main {
+    grid-area: 3/2;
+    display: grid;
+    grid-template:
+      minmax(auto, 200px) minmax(auto, 60px) / 1fr minmax(auto, 200px)
+      1fr;
+
+    .weather-main-picture {
+      grid-area: 1 / 2;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+      letter-spacing: 0.1em;
+      color: white;
+      grid-area: 2 / 2;
+    }
+  }
+
+  .container-weather-info {
+    p {
+      margin: 0;
+    }
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    grid-area: 4 / 2;
+    margin: 0;
+    font-size: 0.9rem;
+
+    .container-weather-hours,
+    .container-weather-days {
+      padding: 10px 20px 10px 20px;
+      display: grid;
+      grid-template:
+        auto auto
+        / repeat(7, 1fr);
+      border-radius: 20px;
+      background: white;
+    }
+
+    .container-weather-hours {
+      grid-row: 1;
+
+      .bloc-hour {
+        text-align: center;
+        grid-row: span 1;
+        .hour {
+          font-weight: 800;
+        }
+      }
+      .bloc-degree {
+        grid-area: 2 / 1;
+      }
+    }
+
+    .container-weather-days {
+      grid-row: 2;
+
+      .bloc-day {
+        text-align: center;
+        grid-row: span 1;
+        .day {
+          font-weight: 800;
+        }
+      }
+    }
   }
 }
