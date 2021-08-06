@@ -131,6 +131,9 @@ body .last-letter {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: 1 / 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 180px;
 }
 
 .content-app .info-main p {
