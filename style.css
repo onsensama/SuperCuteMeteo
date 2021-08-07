@@ -85,9 +85,9 @@ body .last-letter {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 50px auto auto auto 1fr;
+  -ms-grid-rows: auto auto auto auto auto;
   -ms-grid-columns: 40px 1fr 40px;
-      grid-template: 50px auto auto auto 1fr / 40px 1fr 40px;
+      grid-template: auto auto auto auto auto / 40px 1fr 40px;
   grid-row-gap: 50px;
 }
 
@@ -122,9 +122,9 @@ body .last-letter {
   grid-area: 3/2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: minmax(auto, 200px) minmax(auto, 60px);
+  -ms-grid-rows: auto 80px;
   -ms-grid-columns: 1fr minmax(auto, 200px) 1fr;
-      grid-template: minmax(auto, 200px) minmax(auto, 60px)/1fr minmax(auto, 200px) 1fr;
+      grid-template: auto 80px/1fr minmax(auto, 200px) 1fr;
 }
 
 .content-app .info-main .weather-main-picture {

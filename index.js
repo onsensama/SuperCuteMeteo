@@ -38,35 +38,44 @@ function dataDisplay(dataMeteo) {
 
 function displayMainPicture(dataMeteo) {
   const weatherImg = document.querySelector(".weather-main-picture");
-  const currentweather = dataMeteo.current.weather[0].description;
+  const currentweather = dataMeteo.current.weather[0].icon;
 
   switch (currentweather) {
-    case "clear sky":
-      weatherImg.src = "/assets/img/weather/clear_sky.png";
+    case "01d":
+    case "01n":
+      weatherImg.src = "/assets/img/weather/01d.png";
       break;
-    case "broken clouds":
-      weatherImg.src = "/assets/img/weather/broken_clouds.png";
+    case "02d":
+    case "02n":
+      weatherImg.src = "/assets/img/weather/02d.png";
       break;
-    case "mist":
-      weatherImg.src = "/assets/img/weather/mist.png";
+    case "03d":
+    case "03n":
+      weatherImg.src = "/assets/img/weather/03d.png";
       break;
-    case "rain":
-      weatherImg.src = "/assets/img/weather/rain.png";
+    case "04d":
+    case "04n":
+      weatherImg.src = "/assets/img/weather/04d.png";
       break;
-    case "scattered clouds":
-      weatherImg.src = "/assets/img/weather/scattered_clouds.png";
+    case "09d":
+    case "09n":
+      weatherImg.src = "/assets/img/weather/09d.png";
       break;
-    case "shower rain":
-      weatherImg.src = "/assets/img/weather/shower_rain.png";
+    case "10d":
+    case "10n":
+      weatherImg.src = "/assets/img/weather/10d.png";
       break;
-    case "snow":
-      weatherImg.src = "/assets/img/weather/snow.png";
+    case "11d":
+    case "11n":
+      weatherImg.src = "/assets/img/weather/11d.png";
       break;
-    case "thunderstorm":
-      weatherImg.src = "/assets/img/weather/thunderstorm.png";
+    case "13d":
+    case "13n":
+      weatherImg.src = "/assets/img/weather/13d.png";
       break;
-    case "wind":
-      weatherImg.src = "/assets/img/weather/wind.png";
+    case "50d":
+    case "50n":
+      weatherImg.src = "/assets/img/weather/50d.png";
       break;
 
     default:

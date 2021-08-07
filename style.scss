@@ -70,11 +70,11 @@ body {
   height: 100%;
   display: grid;
   grid-template:
-    50px
     auto
     auto
     auto
-    1fr
+    auto
+    auto
     / 40px 1fr 40px;
   grid-row-gap: 50px;
 
@@ -105,7 +105,7 @@ body {
     grid-area: 3/2;
     display: grid;
     grid-template:
-      minmax(auto, 200px) minmax(auto, 60px) / 1fr minmax(auto, 200px)
+      auto 80px / 1fr minmax(auto, 200px)
       1fr;
 
     .weather-main-picture {
