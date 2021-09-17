@@ -1,7 +1,5 @@
 # SuperCute Meteo
 
-App VanillaJS V-02
-
 Application for kids giving the current weather, the weather of the coming hours and the weather of the coming days based on the user's location.
 
 ## Install
