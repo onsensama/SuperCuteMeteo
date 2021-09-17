@@ -2,7 +2,7 @@
 
 App VanillaJS V-02
 
-Application giving the current weather, the weather of the coming hours and the weather of the coming days based on the user's location.
+Application for kids giving the current weather, the weather of the coming hours and the weather of the coming days based on the user's location.
 
 ## Install
 
